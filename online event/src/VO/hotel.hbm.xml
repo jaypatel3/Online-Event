@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.hotelVO" table="hotel">
+   <id name="hotelid" type="long" column="hotelid" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="hotelname">
+   <column name="hotelname"/>
+  </property>
+  <property name="hoteldescription">
+  <column name="hoteldescription"/>
+  </property>
+  <property name="hoteladdress1">
+  <column name="hoteladdress1"/>
+  </property>
+   <property name="hoteladdress2">
+  <column name="hoteladdress2"/>
+  </property>
+
+  <property name="phone1" type="long" >
+   <column name="phone1"/>
+  </property>
+ <property name="phone2" type="long">
+   <column name="phone2"/>
+  </property>
+ <property name="fax" type="long" >
+   <column name="fax"/>
+  </property>
+ <property name="email">
+   <column name="email"/>
+  </property>
+  <property name="countryid" type="long">
+   <column name="countryid"/>
+  </property>
+  <property name="stateid" type="long">
+   <column name="stateid"/>
+  </property>
+  <property name="cityid" type="long">
+   <column name="cityid"/>
+  </property>
+  <property name="hotelPhoto">
+   <column name="hotelPhoto"/>
+  </property>
+ </class>
+</hibernate-mapping>

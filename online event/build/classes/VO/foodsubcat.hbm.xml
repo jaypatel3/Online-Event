@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.foodsubcatVO" table="foodsubsubcategory">
+   <id name="foodsbubcatid" type="long" column="foodsubcatid" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="foodsubcatname">
+   <column name="foodsubcatname" />
+  </property>
+  <property name="foodsubcatdes">
+  <column name="foodsubcatdescription"/>
+  </property>
+
+  <property name="foodcatid" type="long">
+   <column name="foodcatId" />
+  </property>
+
+ </class>
+</hibernate-mapping>

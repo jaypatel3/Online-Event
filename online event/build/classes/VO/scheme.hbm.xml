@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.schemeVO" table="scheme">
+   <id name="schemeid" type="long" column="schemeid" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="categoryid" type="long">
+   <column name="categoryid"/>
+  </property>
+  <property name="subcategoryid" type="long">
+  <column name="subcategoryid"/>
+  </property>
+  <property name="schemename">
+  <column name="schemename"/>
+  </property>
+
+  <property name="schemedes" >
+   <column name="schemedes"/>
+  </property>
+
+ </class>
+</hibernate-mapping>

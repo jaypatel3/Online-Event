@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.galleryVO" table="gallery">
+   <id name="galleryid" type="long" column="galleryid" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="categoryid" type="long">
+   <column name="categoryid"/>
+  </property>
+  <property name="subcategoryid" type="long">
+  <column name="subcategoryid"/>
+  </property>
+  <property name="photoname">
+  <column name="photoname"/>
+  </property>
+<property name="photo" >
+   <column name="imgpath"/>
+  </property>
+  <property name="photodes" >
+   <column name="photodes"/>
+  </property>
+
+ </class>
+</hibernate-mapping>

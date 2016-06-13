@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.SignupVO" table="signup">
+   <id name="signupId" type="int" column="ID" >
+   <generator class="increment"/>
+  </id>
+ <property name="fname">
+   <column name="firstname" />
+  </property>
+  
+  <property name="lname">
+  <column name="lastname"/>
+  </property>
+   
+   <property name="password">
+  <column name="password"/>
+  </property>
+  
+   <property name="address">
+  <column name="address"/>
+  </property>
+   <property name="country">
+  <column name="country"/>
+  </property>
+  
+   <property name="state">
+  <column name="state"/>
+  </property>
+  
+   <property name="city">
+  <column name="city"/>
+  </property>
+  
+   <property name="emailid">
+   <column name="Emailid" />
+  </property> 
+   <property name="username">
+   <column name="Username" />
+   
+  </property>
+  <property name="userType">
+   <column name="Usertype" />
+   
+  </property>
+  
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.fooditemVO" table="fooditem">
+   <id name="fooditemid" type="long" column="fooditemid" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="foodcategoryid" type="long">
+   <column name="foodcategoryid"/>
+  </property>
+  <property name="foodsubcategoryid" type="long">
+  <column name="foodsubcategoryid"/>
+  </property>
+  <property name="fooditemname">
+  <column name="fooditemname"/>
+  </property>
+
+  <property name="fooditemdes" >
+   <column name="fooditemdes"/>
+  </property>
+  <property name="fooditempic" >
+   <column name="fooditempic"/>
+  </property>
+<property name="fooditemprice" >
+   <column name="fooditemprice"/>
+  </property>
+ </class>
+</hibernate-mapping>

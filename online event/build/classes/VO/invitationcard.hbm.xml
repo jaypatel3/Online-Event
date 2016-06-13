@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.invitationCardVO" table="invitationcard">
+   <id name="invitationcardid"  type="long" column="invitationcardid" >
+   <generator class="increment"/>
+  </id>
+
+  <property name="category" type="long">
+   <column name="categoryid"/>
+  </property>
+  <property name="subcategory" type="long">
+  <column name="subcategoryid"/>
+  </property>
+  <property name="invitationcardname">
+  <column name="invitationcardname"/>
+  </property>
+
+  <property name="invitationcarddes" >
+   <column name="invitationcarddes"/>
+  </property>
+  <property name="invitationcardpic" >
+   <column name="invitationcardpic"/>
+  </property>
+
+ </class>
+</hibernate-mapping>

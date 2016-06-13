@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.selectVO" table="select">
+   <id name="selectId" type="int" column="ID" >
+   <generator class="increment"/>
+  </id>
+  
+   <property name="catName">
+  <column name="catname"/>
+  </property>
+  
+  <property name="subcatName">
+   <column name="suncatname" />
+   
+  </property>
+  
+  
+  <property name="fooditemName">
+   <column name="fooditemname" />
+   
+  </property>
+  
+  <property name="foodcatName">
+   <column name="foodcatname" />
+   
+  </property>
+  
+  <property name="foodsubcatName">
+   <column name="foodsubcatname" />
+   
+  </property>
+  
+  <property name="hotelName">
+   <column name="hotelname" />
+   
+  </property>
+  
+  
+  
+  
+ </class>
+</hibernate-mapping>

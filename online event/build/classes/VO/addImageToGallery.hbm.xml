@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.ImageGalleryVO" table="imageGallery">
+   <id name="imageid"  type="long" column="imageid" >
+   <generator class="increment" />
+  </id>
+
+  <property name="galId">
+   <column name="galId"/>
+  </property>
+  <property name="fileName" >
+  <column name="fileName"/>
+  </property>
+  <property name="desc">
+  <column name="desc"/>
+  </property>
+
+ </class>
+</hibernate-mapping>
